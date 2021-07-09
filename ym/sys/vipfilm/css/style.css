@@ -1,0 +1,87 @@
+/* 运行时间颜色代码 */
+#momk{animation:change 10s infinite;font-weight:800; }
+@keyframes change{0%{color:#5cb85c;}25%{color:#556bd8;}50%{color:#e40707;}75%{color:#66e616;}100% {color:#67bd31;}}
+/* end */
+.copyright p{margin: 0;}
+/* 各站视频按钮 */
+.unit-100 {width: 100%;}
+.language {text-align: center;margin: 0 auto;position: relative;padding-top: 15px;padding-bottom:20px;}
+.btn2 {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #5cb85c;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    cursor: pointer;
+    background: #eeeded;
+    padding: 20px 20px;
+    height: 2.3em;
+}
+.btn2:link {
+    color: #ffffff;
+    background: #5cb85c;
+}
+.btn2:visited {
+    color: #ffffff;
+    background: #5cb85c;
+}
+.btn2:hover {
+    color: #ffffff;
+    background: #449D44;
+}
+.btn2:active {
+    color: #ffffff;
+    background: #5cb85c;
+}
+.btn-outline2 {
+    background: none;
+    border: 3px solid #5cb85c;
+    *height: 15px;
+    *height: _15px;
+    margin-right: 14px;
+    padding-top: 6px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+/* end */
+/* 背景 */
+body {
+	background-image: url(https://cdn.jsdelivr.net/gh/SeekerXm/images@main/img/katong.png); /* https://cdn.jsdelivr.net/gh/SeekerXm/images@main/img/katong.png */
+	background-repeat: no-repeat;/* 不重复背景图像 */
+	background-attachment: fixed;/* 固定的背景图像 */
+	height: 100%;
+	width: 100%;
+}
+/* 滚动条样式 */
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+	width: 9px;
+	height: 9px
+}
+
+/*定义滚动条轨道*/
+::-webkit-scrollbar-track {
+	background-color: transparent;
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+	background-color: #417080;
+	background-image: -webkit-linear-gradient(45deg, rgba(52, 104, 156, 1.0) 25%, transparent 25%, transparent 50%, rgba(255, 85, 0, 0.4) 50%, rgba(85, 170, 255, 0.4) 75%, transparent 75%, transparent);
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em
+}
+
+/* 滚动条样式end */

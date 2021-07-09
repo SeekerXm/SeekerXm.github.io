@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>VIP付费视频解析系统 - 诗梦博客</title>
+		<meta name="description" content="VIP付费视频解析系统-实验室 - 诗梦博客">
+		<meta name="keywords" content="诗梦博客,个人记录,Seeker,技术博客,个人生活,学生博客,">
+		<link rel="icon" href="images/favicon.ico" sizes="16×16">
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			function dihejk() {
+				var diz = document.getElementById("url").value;
+				var jkurl = document.getElementById("jk");
+				var jk = document.getElementById("jk").selectedIndex;
+				var jkv = jkurl.options[jk].value;
+				var cljurl = document.getElementById("player");
+				cljurl.src = jkv + diz
+			}
+		</script>
+	</head>
+	<body>
+		<div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 center-block" style="float: none;">
+			<h3 class="text-muted" style="text-align: center;">诗梦VIP付费视频解析系统</h3>
+			<hr>
+			<table class="table table-bordered">
+				<tbody>
+					<div class="col-md-14 column">
+						<div class="panel panel-default">
+							<div id="kj" class="panel-body">
+								<iframe style=" background-color:#000" src="gif.html" id="player" width="100%"
+									height="400px" allowtransparency="true" frameborder="0" scrolling="no"
+									allowfullscreen="iframe"></iframe>
+							</div>
+						</div>
+					</div>
+					<tr>
+						<div class="col-md-14 column">
+							<form method="get" id="1233911832">
+								<div class="input-group" style="width: 100%;">
+									<span class="input-group-addon input-lg" style="width: 80px; ">选择接口</span>
+									<select class="form-control input-lg" id="jk">
+										<option value="https://tv.socarchina.com/vips/?url=" selected="selected">
+											ytatlsmp【推荐】</option>
+										<option value="https://tv.socarchina.com/vipsb/?url=">ytatlsmp(备用)</option>
+										<option value="http://www.wmxz.wang/video.php?url=">wmxz【推荐】</option>
+										<option value="https://jqaaa.com/jx.php?url=">t2</option>
+										<option value="http://api.bbbbbb.me/jx/?url=">t6</option>
+										<option value="http://jx.598110.com/?url=">t9</option>
+										<option value="http://17kyun.com/api.php?url=">t13</option>
+										<option value="http://2.jx.72du.com/video.php?url=">72du</option>
+										<option value="http://www.vipjiexi.com/yun.php?url=">vipjiexi</option>
+										<option value="http://api.cloudparse.com/?url=">cloudparse</option>
+										<option value="http://yyygwz.com/index.php?url=">yyygwz</option>
+										<option value="http://000o.cc/jx/ty.php?url=">000o</option>
+										<option value="http://5qiyi.sdyhy.cn/5qiyi/5qiyi1.php?url=">sdyhy(1)</option>
+										<option value="http://5qiyi.sdyhy.cn/5qiyi/5qiyi2.php?url=">sdyhy(2)</option>
+										<option value="http://api.47ks.com/webcloud/?v=">47ks</option>
+										<option value="http://jx.71ki.com/?url=">71ki</option>
+										<option value="http://yun.mt2t.com/yun?url=">mt2t</option>
+										<option value="http://jx.haokan5.net/ty/tong.php?url=">haokan5(ty)</option>
+										<option value="http://jx.haokan5.net/jx/?url=">haokan5(jx)</option>
+										<option value="http://player.gakui.top/?url=">gakui</option>
+										<option value="http://qtzr.net/s/?qt=">qtzr</option>
+								</div>
+								<br>
+								<div class="input-group" style="width: 100%;">
+									<span class="input-group-addon input-lg" style="width: 80px;">播放地址</span>
+									<input class="form-control input-lg" type="search" placeholder="输入播放地址" id="url">
+								</div>
+								<br>
+								<div>
+									<button id="bf" type="button" class="btn btn-success btn-lg btn-block"
+										onclick="dihejk()">Go</button>
+								</div>
+								<div class="unit-100">
+									<div class="language">
+										<a class="btn2 btn-outline2" href="https://www.youku.com/" rel="nofollow"
+											target="_blank">进入优酷视频</a>
+										<a class="btn2 btn-outline2" href="https://v.qq.com/" rel="nofollow"
+											target="_blank">进入腾讯视频</a>
+										<a class="btn2 btn-outline2" href="https://www.iqiyi.com/" rel="nofollow"
+											target="_blank" style="margin-left:8px">进入爱奇视频</a>
+										<a class="btn2 btn-outline2" href="https://www.tudou.com/" rel="nofollow"
+											target="_blank">进入土豆视频</a>
+										<br>
+										<a class="btn2 btn-outline2" href="http://www.le.com/" rel="nofollow"
+											target="_blank">进入乐视视频</a>
+										<a class="btn2 btn-outline2" href="https://tv.sohu.com/" rel="nofollow"
+											target="_blank">进入搜狐视频</a>
+										<a class="btn2 btn-outline2" href="https://www.mgtv.com/" rel="nofollow"
+											target="_blank">进入芒果视频</a>
+										<a class="btn2 btn-outline2" href="https://www.pptv.com/" rel="nofollow"
+											target="_blank">进入pptv视频</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</tr>
+					<tr>
+						<th>
+							使用介绍<span style="color:#CCC">（本系统使用第三方接口，不保证稳定性）</span>
+						</th>
+					</tr>
+					<tr>
+						<th>
+							<p style="text-indent: 2em;">公告：接口更新，基本能免费解析全网VIP收费视频(目前共计接口21个)。</p>
+							<hr />
+							<p style="text-indent: 2em;">免责声明：<a
+									style="color:#FF3300">本站所有接口都收集于互联网，仅供娱乐使用，本站盖不储存视频以及上传视频，请勿用于非法用途，或损害他人利益，如若不遵守，在本站发生任何版权问题，都与本站无光。若继续使用，说明你已熟知此条声明。</a>
+							</p>
+							<hr />
+							<p style="text-indent: 2em;">注意：如果所选的接口播放视频失败，可多切换下接口，也可以切换接口里的线路，接口会经常更新，<a
+									style="color:#FF3300">由于接口全是免费的，视频窗口可能会自带有广告，请谅解！</a>如果所有接口都播放不了的情况下，请联系我们更新接口。</p>
+							<hr />
+							<p style="text-indent: 2em;">
+								使用方法：以腾讯视频为例，打开腾讯视频官网，选择要看的VIP付费视频页面，在视频页面复制浏览器里的地址粘贴到输入框点击Go按钮即可！
+								（如“八佰”视频地址：https://v.qq.com/x/cover/9f8tpq2gly9p5ts.html?ptag=qqbrowser）</p>
+							<hr />
+							接口说明:<br><br>
+							<div>
+								【ytatlsmp】优酷、腾讯、爱奇艺、土豆、乐视、搜狐、芒果、PPTV(2020年全网通用稳定高清)<br />
+								【ytatlsmp(备用)】优酷、腾讯、爱奇艺、土豆、乐视、搜狐、芒果、PPTV(2020年全网(备用)高清)<br />
+								【wmxz】爱奇艺、优酷、土豆、腾讯、搜狐、乐视、芒果、PPTV<br />
+								【72du】爱奇艺、优酷、土豆、腾讯、搜狐、乐视、芒果、PPTV<br />
+								【vipjiexi】爱奇艺、优酷、土豆、腾讯、搜狐、乐视、芒果、PPTV<br />
+								【cloudparse】爱奇艺、优酷、土豆、腾讯、搜狐、乐视、芒果、PPTV<br />
+								【yyygwz】爱奇艺、优酷、土豆、搜狐、乐视、芒果、PPTV<br />
+								【000o】爱奇艺、优酷、土豆、搜狐、乐视、芒果、PPTV<br />
+								【sdyhy(1)】爱奇艺、优酷、土豆、搜狐、乐视、芒果、PPTV<br />
+								【sdyhy(2)】爱奇艺、优酷、土豆、搜狐、乐视、芒果、PPTV<br />
+								【47ks】爱奇艺、优酷、搜狐、乐视、芒果、PPTV<br />
+								【71ki】爱奇艺、优酷、搜狐、乐视、芒果<br />
+								【mt2t】爱奇艺、腾讯、搜狐、乐视、芒果<br />
+								【haokan5(ty)】优酷、土豆、乐视、芒果、PPTV<br />
+								【haokan5(jx)】爱奇艺、优酷、乐视、芒果<br />
+								【gakui】爱奇艺、芒果<br />
+								【qtzr】搜狐、乐视<br />
+								【t2】腾讯<br />
+								【t6】腾讯<br />
+								【t9】腾讯<br />
+								【t13】腾讯<br />
+								（注意：本接口说明不保证一定准确，仅供参考使用！其它接口或网站自行测试）
+							</div>
+						</th>
+					</tr>
+				</tbody>
+			</table>
+			<div class="panel-body" style="text-align: center;">
+				<div class="container-fluid">
+					<br><span class="copyright" style=" line-height:40px;">
+						<p>Copyright ©By<a href="http://smbk.work/" title="诗梦网络" class="smwl">诗梦博客</a>版权所有</p>
+						<span id="momk" style="color: #ff0000;"></span>
+				</div>
+				<!-- 统计 -->
+				<div style="display:none">
+				</div>
+				<!--运行时间-->
+				<script src="js/RunTime.js"></script>
+	</body>
+</html>
