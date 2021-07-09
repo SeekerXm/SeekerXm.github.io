@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url('../font/sourcesanspro-light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url('../font/sourcesanspro.woff') format('woff');
+}
+/* 快乐酷站体(仅滚动文本文字) */
+@font-face {
+    font-family: "kuzhankuaileti";
+    src: url("../font/kuzhankuaileti.eot"); /* IE9 */
+    src: url("../font/kuzhankuaileti.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("../font/kuzhankuaileti.woff") format("woff"), /* chrome、firefox */
+    url("../font/kuzhankuaileti.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("../font/kuzhankuaileti.svg#kuzhankuaileti") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+/* @font-face {
+  font-family: 'qiantuxiaotuti';
+  src: url('https://cdn.jsdelivr.net/gh/SeekerXm/images@main/MyBlog/fonts/qiantuxiaotuti.ttf');
+} */
