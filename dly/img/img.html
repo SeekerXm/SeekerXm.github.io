@@ -1,0 +1,408 @@
+<!DOCTYPE HTML>
+<html class="small-scroll-bar no-js bg" lang="zh-cmn-Hans">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="x-dns-prefetch-control" content="on">
+		<title>相册 - 诗梦博客</title>
+		<meta name="description" content="相册 - 诗梦博客">
+		<meta name="keywords" content="诗梦博客,个人记录,Seeker,技术博客,个人生活,学生博客,">
+		<link rel="shortcut icon" href="../../image/favicon.ico">
+		<link rel="stylesheet" href="../../css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="../../css/function.min-7.3.12020081502.css" type="text/css">
+		<link rel="stylesheet" href="../../css/handsome.min-7.3.12020081502.css" type="text/css">
+		<link rel="stylesheet" href="../../css/font.min-7.3.12020081502.css" type="text/css">
+		<link rel="stylesheet" href="../../css/style.css" type="text/css">
+		<link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css" type="text/css">
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/localconst.js"></script>
+	</head>
+	<body id="body" class="fix-padding">
+		<!-- aside -->
+		<div id="alllayout" class="app app-aside-fix container app-header-fixed ">
+			<!-- headnav -->
+			<header id="header" class="app-header navbar box-shadow-bottom-lg" role="menu">
+				<!-- navbar header（交集处） -->
+				<div class="text-ellipsis navbar-header bg-white">
+					<button class="pull-left visible-xs" ui-toggle-class="off-screen animated" target=".app-aside"
+						ui-scroll="app">
+						<span class="menu-icons"><i data-feather="menu"></i></span>
+					</button>
+					<!-- brand -->
+					<a href="http://smbk.work" class="navbar-brand text-lt">
+						<span id="navbar-brand-day">
+							<img src="../../image/logo.png" type="image/svg+xml"
+								style="width: 130px;height: 40px;margin-top: -18px;max-height: 40px;">
+						</span>
+						<span id="navbar-brand-dark" class="hide"></span>
+					</a>
+					<!-- / brand -->
+				</div>
+				<div class="collapse pos-rlt navbar-collapse bg-white">
+				</div>
+			</header>
+			<!-- / headnav -->
+			<!--选择侧边栏的颜色-->
+			<aside id="aside" class="app-aside hidden-xs bg-white">
+				<!--<aside>-->
+				<div class="aside-wrap" layout="column">
+					<div class="navi-wrap scroll-y scroll-hide" flex="">
+						<!-- user -->
+						<div class="clearfix hidden-xs text-center hide  show" id="aside-user">
+							<div class="dropdown wrapper ">
+								<div ui-nav="">
+									<a href="../gyw.html">
+										<span class="thumb-lg w-auto-folded avatar m-t-sm  ">
+											<div class="toux" style="text-align: center;padding: 25px 0 0 0;">
+												<img style=" width:100px; height:100px;" class="suyibei"
+													src="../../image/avatar.png">
+											</div>
+										</span>
+									</a>
+								</div>
+								<a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-folded vertical-flex"
+									style="cursor: url('../../etc/blue.cur'), auto;" aria-expanded="true">
+									<span class="clear">
+										<span class="block m-t-sm">
+											<strong class="font-bold text-lt">诗·梦</strong>
+											<b class="caret"></b>
+										</span>
+										<span class="text-muted text-xs block">
+											<span class="text-muted text-xs block">
+												<div id="chakhsu"><span style="color: rgb(76, 110, 219);">S</span><span
+														style="color: rgb(35, 171, 216);">e</span><span
+														style="color: rgb(191, 60, 175);">e</span><span
+														style="color: rgb(191, 60, 175);">k</span><span
+														style="color: rgb(54, 140, 225);">e</span><span
+														style="color: rgb(191, 60, 175);">r</span></div>
+											</span>
+										</span>
+									</span>
+								</a>
+								<!-- dropdown -->
+								<ul class="dropdown-menu animated fadeInRight w hidden-folded no-padder">
+									<li class="wrapper b-b m-b-sm bg-info m-n">
+										<span class="arrow top hidden-folded arrow-info"></span>
+										<div>
+											<p>你好，陌生人，欢迎你的到来！<span id="ychyc">呀！被你发现了！常来做客哦！下次来访有惊喜哦！</span></p>
+										</div>
+									</li>
+								</ul>
+								<!-- / dropdown -->
+							</div>
+						</div>
+						<!-- nav -->
+						<nav ui-nav="" class="navi clearfix">
+							<ul class="nav">
+								<!--index-->
+								<div class="line dk hidden-folded"></div>
+								<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+									<span>导航</span>
+								</li>
+								<!--主页-->
+								<li>
+									<a href="../../index.html" class="auto">
+										<span class="nav-icon"><i data-feather="home"></i></span>
+										<span>首页</span>
+									</a>
+								</li>
+								<!-- /主页 -->
+								<li> <a target="_self" href="img/img.html" class="auto"><span class="nav-icon"><i
+												data-feather="image"></i></span><span>相册</span></a></li>
+								<li> <a target="_self" href="../gd.html" class="auto"><span class="nav-icon"><i
+												data-feather="archive"></i></span><span>归档</span></a></li>
+								<li> <a target="_self" href="javascript:;" class="auto"><span
+											class="pull-right text-muted">
+											<i class="fontello icon-fw fontello-angle-right text"></i>
+											<i class="fontello icon-fw fontello-angle-down text-active"></i>
+										</span><span class="nav-icon"><i
+												data-feather="coffee"></i></span><span>关于</span></a>
+									<ul class="nav nav-sub dk">
+										<li> <a target="_self" href="../gyw.html" class="auto"><span class="nav-icon"><i
+														data-feather="coffee"></i></span><span>关于我</span></a></li>
+										<li> <a target="_self" href="../ggb.html" class="auto"><span class="nav-icon"><i
+														data-feather="at-sign"></i></span><span>公告板</span></a></li>
+										<li> <a target="_self" href="../zzw.html" class="auto"><span class="nav-icon"><i
+														class="fa fa-credit-card"></i></span><span>赞助我</span></a></li>
+									</ul>
+								</li>
+								<li class="line dk"></li>
+								<!--Components-->
+								<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+									<span>组成</span>
+								</li>
+								<!--分类category-->
+								<li>
+									<a class="auto">
+										<span class="pull-right text-muted">
+											<i class="fontello icon-fw fontello-angle-right text"></i>
+											<i class="fontello icon-fw fontello-angle-down text-active"></i>
+										</span>
+										<span class="nav-icon"><i data-feather="grid"></i></span>
+
+										<span>分类</span>
+									</a>
+									<ul class="nav nav-sub dk">
+										<li class="nav-sub-header">
+											<a>
+												<span>分类</span>
+											</a>
+										</li>
+										<!--循环输出分类-->
+										<li class="category-level-0 category-parent"><a
+												href="../../shsb/index.html"><span class="nav-icon"><i
+														class="fa fa-heart"></i></span>生活随笔</a></li>
+										<li class="category-level-0 category-parent"><a class="auto"
+												href="javascript:;"><span class="pull-right text-muted">
+													<i class="fontello icon-fw fontello-angle-right text"></i>
+													<i class="fontello icon-fw fontello-angle-down text-active"></i>
+												</span><span class="nav-icon"><i class="fa fa-edit"></i></span><span
+													class="parent_name">技术教程</span></a>
+											<ul class="nav nav-sub dk child-nav">
+												<li class="category-level-1 category-child category-level-odd"><a
+														href="../../jsjc/android/index.html">Android</a></li>
+												<li class="category-level-1 category-child category-level-odd"><a
+														href="../../jsjc/pc/index.html">PC</a></li>
+												<li class="category-level-1 category-child category-level-odd"><a
+														href="../../jsjc/qt/index.html">其他</a></li>
+											</ul>
+										</li>
+										<li class="category-level-0 category-parent"><a
+												href="../../wyym/index.html"><span class="nav-icon"><i
+														class="fa fa-html5"></i></span>网页源码</a></li>
+										<li class="category-level-0 category-parent"><a class="auto"
+												href="javascript:;"><span class="pull-right text-muted">
+													<i class="fontello icon-fw fontello-angle-right text"></i>
+													<i class="fontello icon-fw fontello-angle-down text-active"></i>
+												</span><span class="parent_name"><span class="nav-icon"><i
+															class="fa fa-th-large"></i></span>软件分享</span></a>
+											<ul class="nav nav-sub dk child-nav">
+												<li class="category-level-1 category-child category-level-odd"><a
+														href="../../rjfx/android/index.html">Android</a></li>
+												<li class="category-level-1 category-child category-level-odd"><a
+														href="../../rjfx/pc/index.html">PC</a></li>
+											</ul>
+										</li>
+										<!--/循环输出分类-->
+										<li class="category-level-0 category-parent"><a
+												href="../../zwfl/index.html"><span class="nav-icon"><i
+														class="fa fa-calendar-o"></i></span>暂无分类</a></li>
+									</ul>
+								</li>
+								<!--独立页面pages-->
+								<li>
+									<a class="auto">
+										<span class="pull-right text-muted">
+											<i class="fontello icon-fw fontello-angle-right text"></i>
+											<i class="fontello icon-fw fontello-angle-down text-active"></i>
+										</span>
+										<span class="nav-icon"><i data-feather="file"></i></span>
+										<span>页面</span>
+									</a>
+									<ul class="nav nav-sub dk">
+										<li class="nav-sub-header">
+											<a data-no-instant="">
+												<span>页面</span>
+											</a>
+										</li>
+										<!--这个字段不会被显示出来-->
+										<!--循环输出独立页面-->
+										<li><a href="../../ym/sgj.html"><span class="nav-icon"><i
+														class="fa fa-birthday-cake"></i></span><span>时光机</span></a></li>
+										<li><a href="../../ym/wht/wht.html"><span class="nav-icon"><i
+														class="fa fa-book"></i></span><span>万花筒</span></a></li>
+										<li><a href="../../ym/sys.html"><span class="nav-icon"><i
+														class="fa fa-print"></i></span><span>实验室</span></a></li>
+										<li><a href="../../ym/dhl.html"><span class="nav-icon"><i
+														class="fa fa-link"></i></span><span>导航链</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<!-- nav -->
+					</div>
+				</div>
+				<!--.aside-wrap-->
+			</aside>
+			<!-- content -->
+			<div id="content" class="app-content">
+				<!--loading animate-->
+				<div id="loading" class="butterbar active hide">
+					<span class="bar"></span>
+				</div>
+				<a class="off-screen-toggle hide"></a>
+				<main class="app-content-body ">
+					<div class="hbox hbox-auto-xs hbox-auto-sm">
+						<div class="col center-part">
+							<header class="bg-light lter wrapper-md">
+								<h1 class="m-n font-thin h3 text-black l-h">相册图片</h1>
+								<small class="text-muted letterspacing indexWords">博主记录一些生活点滴照片！</small>
+							</header>
+							<div class="wrapper-md" id="post-panel">
+								<!--首页输出相册-->
+								<div class="layout">
+									<div class="albums">
+										<figure class="album-thumb" itemprop="associatedMedia">
+											<a href="passage/1.html" class="img-wrap">
+												<img class="lazy" alt="博主常用头像" src="img/1.png" itemprop="thumbnail">
+											</a>
+											<figcaption itemprop="caption description">博主常用头像</figcaption>
+										</figure>
+									</div>
+								</div>
+								<!--分页首页按钮-->
+								<!-- <nav class="text-center m-t-lg m-b-lg image_nav" role="navigation" style="display: none">
+									<ol class="page-navigator">
+										<li class="current"><a href="javascript:;">1</a></li>
+										<li><a href="javascript:;">2</a></li>
+										<li class="next"><a href="javascript:;"><i class="fontello fontello-chevron-right"></i></a></li>
+									</ol>
+								</nav> -->
+								<nav class="text-center m-t-lg m-b-lg">
+									<p class="infinite-scroll-last">已经到底了</p>
+								</nav>
+							</div>
+						</div>
+						<!--首页右侧栏-->
+						<aside class="asideBar col w-md bg-white-only bg-auto no-border-xs" role="complementary">
+							<div id="sidebar">
+								<section id="tabs-4" class="widget widget_tabs clear">
+									<div class="nav-tabs-alt no-js-hide">
+										<ul id="ycwz"
+											class="nav nav-tabs nav-justified box-shadow-bottom-normal tablist"
+											role="tablist">
+											<span class="navs-slider-bar"></span>
+										</ul>
+									</div>
+								</section>
+								<!--博客信息-->
+								<section id="blog_info" class="widget widget_categories wrapper-md clear">
+									<h5 class="widget-title m-t-none text-md">博客信息</h5>
+									<ul class="list-group box-shadow-wrap-normal">
+										<li class="list-group-item text-second"><span class="blog-info-icons"> <i
+													data-feather="award"></i></span>
+											<span class="badge
+										pull-right" style="background-color: rgb(93, 189, 231);">诗·梦</span>博主昵称
+										</li>
+										<li class="list-group-item text-second"> <span class="blog-info-icons"> <i
+													data-feather="message-circle"></i></span>
+											<span class="badge
+						pull-right" style="background-color: rgb(171, 182, 245);"><a href="../gyw.html" data-original-title="点我跳转到博主主页"
+													data-toggle="tooltip">点我</a></span>联系博主
+										</li>
+										<li class="list-group-item text-second"><span class="blog-info-icons"> <i
+													data-feather="calendar"></i></span>
+											<span class="badge
+						pull-right" style="background-color: rgb(163, 219, 243);"><span id="momk"></span></span>运行天数
+										</li>
+									</ul>
+								</section>
+								<!--非文章页面-->
+								<section id="tag_cloud-2" class="widget widget_tag_cloud wrapper-md clear">
+									<h5 class="widget-title m-t-none text-md">标签云</h5>
+									<div class="tags l-h-2x">
+										<a href="javascript:;" class="label badge bg-dark-1" title="音乐"
+											data-toggle="tooltip">音乐</a>
+										<a href="javascript:;" class="label badge bg-dark-2" title="壁纸"
+											data-toggle="tooltip">壁纸</a>
+										<a href="javascript:;" class="label badge bg-dark-3" title="运动"
+											data-toggle="tooltip">运动</a>
+										<a href="javascript:;" class="label badge bg-dark-4" title="生活"
+											data-toggle="tooltip">生活</a>
+										<a href="javascript:;" class="label badge bg-dark-5" title="电影"
+											data-toggle="tooltip">电影</a>
+										<a href="javascript:;" class="label badge bg-dark-6" title="HTML"
+											data-toggle="tooltip">HTML</a>
+										<a href="javascript:;" class="label badge bg-dark-7" title="CSS"
+											data-toggle="tooltip">CSS</a>
+										<a href="javascript:;" class="label badge bg-dark-8" title="JavaScript"
+											data-toggle="tooltip">JavaScript</a>
+										<a href="javascript:;" class="label badge bg-dark-1" title="仿站"
+											data-toggle="tooltip">仿站</a>
+										<a href="javascript:;" class="label badge bg-dark-2" title="玩机党"
+											data-toggle="tooltip">玩机党</a>
+										<a href="javascript:;" class="label badge bg-dark-3" title="折腾"
+											data-toggle="tooltip">折腾</a>
+										<a href="javascript:;" class="label badge bg-dark-4" title="软件"
+											data-toggle="tooltip">软件</a>
+										<a href="javascript:;" class="label badge bg-dark-5" title="分享"
+											data-toggle="tooltip">分享</a>
+										<a href="javascript:;" class="label badge bg-dark-6" title="源码"
+											data-toggle="tooltip">源码</a>
+										<a href="javascript:;" class="label badge bg-dark-7" title="动漫"
+											data-toggle="tooltip">动漫</a>
+										<a href="javascript:;" class="label badge bg-dark-8" title="PHP"
+											data-toggle="tooltip">PHP</a>
+										<a href="javascript:;" class="label badge bg-dark-1" title="奋斗"
+											data-toggle="tooltip">奋斗</a>
+										<a href="javascript:;" class="label badge bg-dark-2" title="Web"
+											data-toggle="tooltip">Web</a>
+										<a href="javascript:;" class="label badge bg-dark-3" title="低调"
+											data-toggle="tooltip">低调</a>
+										<a href="javascript:;" class="label badge bg-dark-4" title="00后"
+											data-toggle="tooltip">00后</a>
+										<a href="javascript:;" class="label badge bg-dark-5" title="现实主义者"
+											data-toggle="tooltip">现实主义者</a>
+										<a href="javascript:;" class="label badge bg-dark-6" title="不善言辞"
+											data-toggle="tooltip">不善言辞</a>
+										<a href="javascript:;" class="label badge bg-dark-7" title="IT"
+											data-toggle="tooltip">IT</a>
+										<a href="javascript:;" class="label badge bg-dark-8" title="礼尚往来"
+											data-toggle="tooltip">礼尚往来</a>
+										<a href="javascript:;" class="label badge bg-dark-9" title="礼尚往来"
+											data-toggle="tooltip">前端</a>
+										<a href="javascript:;" class="label badge bg-dark-10" title="礼尚往来"
+											data-toggle="tooltip">杂七杂八</a>
+										<a href="javascript:;" class="label badge bg-dark-1" title="小工具"
+											data-toggle="tooltip">小工具</a>
+										<a href="javascript:;" class="label badge bg-dark-2" title="网站"
+											data-toggle="tooltip">网站</a>
+									</div>
+								</section>
+							</div>
+						</aside>
+				</main>
+				<!-- footer -->
+			</div>
+			<footer id="footer" class="app-footer" role="footer">
+				<div class="wrapper bg-light">
+					<span class="pull-right hidden-xs text-ellipsis">
+						<span class="footer-custom footer-left-ver-right">本站部分素材采集于网络，如有侵权，请联系<a target="_blank"
+								href="https://qm.qq.com/cgi-bin/qm/qr?k=twRv5dCfH0NN6njRPrmn4bWu76s3Bssd&noverify=0">站长</a>及时删除</span>
+					</span>
+					<span class="footer-text-ellipsis">
+						<span class="footer-custom footer-left-ver-left">&nbsp;Copyright ©2020 - Now&nbsp;</span><span
+							class="footer-custom footer-left-user">By<a href="http://smbk.work/">诗梦博客</a>
+							▏版权所有</span>&nbsp;
+					</span>
+					<!-- 底部波浪样式 -->
+					<div id="hans-bolang"></div>
+				</div>
+				<div class="topButton panel-default">
+					<button id="goToTop"
+						class="fix-padding btn btn-default no-shadow pos-abt hide  border-radius-half-left"
+						data-toggle="tooltip" data-placement="left" data-original-title="返回顶部">
+						<i class="fontello fontello-chevron-circle-up" aria-hidden="true"></i>
+					</button>
+				</div>
+			</footer>
+		</div>
+		<!--end of .app app-header-fixed-->
+		<script src="../../js/function.min-7.3.12020081502.js"></script>
+		<script src="../../js/core.min-7.3.12020081502.js"></script>
+		<!--主题组件js加载-->
+		<script src="../../js/jquery.pjax.min.js" type="text/javascript"></script>
+		<!--平滑滚动组件-->
+		<script src="../../js/SmoothScroll.min.js"></script>
+		<!--运行时间-->
+		<script src="../../js/RunTime.js"></script>
+		<!--点击特效-->
+		<script src="../../js/click-style.js"></script>
+		<!-- 下雪特效 -->
+		<script src="../../js/snow.js"></script>
+		<!-- 动态昵称 -->
+		<script src="../../js/dtnc.js"></script>
+	</body>
+</html>
