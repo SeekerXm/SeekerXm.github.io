@@ -1,0 +1,968 @@
+<!DOCTYPE HTML>
+<html class="small-scroll-bar no-js bg" lang="zh-cmn-Hans">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="x-dns-prefetch-control" content="on">
+		<title>诗梦 - 相逢的人会再相逢</title>
+		<meta name="description" content="诗梦博客，记录个人生活点滴所思所想，分享各种技术教程，软件，源码等。">
+		<meta name="keywords" content="诗梦博客,个人记录,Seeker,技术博客,个人生活,学生博客,">
+		<link rel="shortcut icon" href="image/favicon.ico">
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/function.min-7.3.12020081502.css" type="text/css">
+		<link rel="stylesheet" href="css/handsome.min-7.3.12020081502.css" type="text/css">
+		<link rel="stylesheet" href="css/font.min-7.3.12020081502.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/localconst.js"></script>
+	</head>
+	<body id="body" class="fix-padding">
+		<!-- aside -->
+		<div id="alllayout" class="app app-aside-fix container app-header-fixed ">
+			<!-- headnav -->
+			<header id="header" class="app-header navbar box-shadow-bottom-lg" role="menu">
+				<!-- navbar header（交集处） -->
+				<div class="text-ellipsis navbar-header bg-white">
+					<button class="pull-right visible-xs" ui-toggle-class="show animated animated-lento fadeIn"
+						target=".navbar-collapse">
+						<span class="menu-icons"><i data-feather="twitch"></i></span>
+					</button>
+					<button class="pull-left visible-xs" ui-toggle-class="off-screen animated" target=".app-aside"
+						ui-scroll="app">
+						<span class="menu-icons"><i data-feather="menu"></i></span>
+					</button>
+					<!-- brand -->
+					<a href="http://smbk.work" class="navbar-brand text-lt">
+						<span id="navbar-brand-day">
+							<img src="image/logo.png" type="image/svg+xml"
+								style="width: 130px;height: 40px;margin-top: -18px;max-height: 40px;">
+						</span>
+						<span id="navbar-brand-dark" class="hide"></span>
+					</a>
+					<!-- / brand -->
+				</div>
+				<div class="collapse pos-rlt navbar-collapse bg-white">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="feathericons dropdown-toggle">
+								<i data-feather="twitch"></i>
+								<b class="caret"></b>
+								<span class="visible-xs-inline">天气签名</span>
+								<span class="badge badge-sm up bg-danger pull-right-xs"></span>
+							</a>
+							<!-- dropdown -->
+							<div class="dropdown-menu w-xl animated fadeInUp">
+								<div class="panel bg-white">
+									<div class="panel-heading b-light bg-light">
+										<strong>天气签名</strong>
+									</div>
+									<div class="list-group tqtm" id="smallRecording">
+										<a href="javascript:;" class="list-group-item">
+											<span><img src="https://api.vvhan.com/api/ip?s=自定义名字" alt="天气签名"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<!-- / headnav -->
+			<!--选择侧边栏的颜色-->
+			<aside id="aside" class="app-aside hidden-xs bg-white">
+				<!--<aside>-->
+				<div class="aside-wrap" layout="column">
+					<div class="navi-wrap scroll-y scroll-hide" flex="">
+						<!-- user -->
+						<div class="clearfix hidden-xs text-center hide  show" id="aside-user">
+							<div class="dropdown wrapper ">
+								<div ui-nav="">
+									<a href="dly/gyw.html">
+										<span class="thumb-lg w-auto-folded avatar m-t-sm  ">
+											<div class="toux" style="text-align: center;padding: 25px 0 0 0;">
+												<img style=" width:100px; height:100px;" class="suyibei"
+													src="image/avatar.png">
+											</div>
+										</span>
+									</a>
+								</div>
+								<a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-folded vertical-flex"
+									style="cursor: url('../etc/blue.cur'), auto;" aria-expanded="true">
+									<span class="clear">
+										<span class="block m-t-sm">
+											<strong class="font-bold text-lt">诗·梦</strong>
+											<b class="caret"></b>
+										</span>
+										<span class="text-muted text-xs block">
+											<span class="text-muted text-xs block">
+												<div id="chakhsu"><span style="color: rgb(76, 110, 219);">S</span><span
+														style="color: rgb(35, 171, 216);">e</span><span
+														style="color: rgb(191, 60, 175);">e</span><span
+														style="color: rgb(191, 60, 175);">k</span><span
+														style="color: rgb(54, 140, 225);">e</span><span
+														style="color: rgb(191, 60, 175);">r</span></div>
+											</span>
+										</span>
+									</span>
+								</a>
+								<!-- dropdown -->
+								<ul class="dropdown-menu animated fadeInRight w hidden-folded no-padder">
+									<li class="wrapper b-b m-b-sm bg-info m-n">
+										<span class="arrow top hidden-folded arrow-info"></span>
+										<div>
+											<p>你好，陌生人，欢迎你的到来！<span id="ychyc">呀！被你发现了！常来做客哦！下次来访有惊喜哦！</span></p>
+										</div>
+									</li>
+								</ul>
+								<!-- / dropdown -->
+							</div>
+						</div>
+						<!-- nav -->
+						<nav ui-nav="" class="navi clearfix">
+							<ul class="nav">
+								<!--index-->
+								<div class="line dk hidden-folded"></div>
+								<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+									<span>导航</span>
+								</li>
+								<!--主页-->
+								<li>
+									<a href="" class="auto">
+										<span class="nav-icon"><i data-feather="home"></i></span>
+										<span>首页</span>
+									</a>
+								</li>
+								<!-- /主页 -->
+								<li> <a target="_self" href="dly/img/img.html" class="auto"><span class="nav-icon"><i
+												data-feather="image"></i></span><span>相册</span></a></li>
+								<li> <a target="_self" href="dly/gd.html" class="auto"><span class="nav-icon"><i
+												data-feather="archive"></i></span><span>归档</span></a></li>
+								<li> <a target="_self" href="javascript:;" class="auto"><span
+											class="pull-right text-muted">
+											<i class="fontello icon-fw fontello-angle-right text"></i>
+											<i class="fontello icon-fw fontello-angle-down text-active"></i>
+										</span><span class="nav-icon"><i
+												data-feather="coffee"></i></span><span>关于</span></a>
+									<ul class="nav nav-sub dk">
+										<li> <a target="_self" href="dly/gyw.html" class="auto"><span
+													class="nav-icon"><i
+														data-feather="coffee"></i></span><span>关于我</span></a></li>
+										<li> <a target="_self" href="dly/ggb.html" class="auto"><span
+													class="nav-icon"><i
+														data-feather="at-sign"></i></span><span>公告板</span></a></li>
+										<li> <a target="_self" href="dly/zzw.html" class="auto"><span
+													class="nav-icon"><i
+														class="fa fa-credit-card"></i></span><span>赞助我</span></a></li>
+									</ul>
+								</li>
+								<li class="line dk"></li>
+								<!--Components-->
+								<li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+									<span>组成</span>
+								</li>
+								<!--分类category-->
+								<li>
+									<a class="auto">
+										<span class="pull-right text-muted">
+											<i class="fontello icon-fw fontello-angle-right text"></i>
+											<i class="fontello icon-fw fontello-angle-down text-active"></i>
+										</span>
+										<span class="nav-icon"><i data-feather="grid"></i></span>
+
+										<span>分类</span>
+									</a>
+									<ul class="nav nav-sub dk">
+										<li class="nav-sub-header">
+											<a>
+												<span>分类</span>
+											</a>
+										</li>
+										<!--循环输出分类-->
+										<li class="category-level-0 category-parent"><a href="shsb/index.html"><span
+													class="nav-icon"><i class="fa fa-heart"></i></span>生活随笔</a></li>
+										<li class="category-level-0 category-parent"><a class="auto"
+												href="javascript:;"><span class="pull-right text-muted">
+													<i class="fontello icon-fw fontello-angle-right text"></i>
+													<i class="fontello icon-fw fontello-angle-down text-active"></i>
+												</span><span class="nav-icon"><i class="fa fa-edit"></i></span><span
+													class="parent_name">技术教程</span></a>
+											<ul class="nav nav-sub dk child-nav">
+												<li class="category-level-1 category-child category-level-odd"><a
+														href="jsjc/android/index.html">Android</a></li>
+												<li class="category-level-1 category-child category-level-odd"><a
+														href="jsjc/pc/index.html">PC</a></li>
+												<li class="category-level-1 category-child category-level-odd"><a
+														href="jsjc/qt/index.html">其他</a></li>
+											</ul>
+										</li>
+										<li class="category-level-0 category-parent"><a href="wyym/index.html"><span
+													class="nav-icon"><i class="fa fa-html5"></i></span>网页源码</a></li>
+										<li class="category-level-0 category-parent"><a class="auto"
+												href="javascript:;"><span class="pull-right text-muted">
+													<i class="fontello icon-fw fontello-angle-right text"></i>
+													<i class="fontello icon-fw fontello-angle-down text-active"></i>
+												</span><span class="parent_name"><span class="nav-icon"><i
+															class="fa fa-th-large"></i></span>软件分享</span></a>
+											<ul class="nav nav-sub dk child-nav">
+												<li class="category-level-1 category-child category-level-odd"><a
+														href="rjfx/android/index.html">Android</a></li>
+												<li class="category-level-1 category-child category-level-odd"><a
+														href="rjfx/pc/index.html">PC</a></li>
+											</ul>
+										</li>
+										<li class="category-level-0 category-parent"><a class="auto"
+												href="javascript:;"><span class="pull-right text-muted">
+													<i class="fontello icon-fw fontello-angle-right text"></i>
+													<i class="fontello icon-fw fontello-angle-down text-active"></i>
+												</span><span class="parent_name"><span class="nav-icon"><i
+															class="fa fa-eye"></i></span>值得一看</span></a>
+											<ul class="nav nav-sub dk child-nav">
+												<li class="category-level-1 category-child category-level-odd"><a
+														href="javascript:;">美图系列</a></li>
+												<li class="category-level-1 category-child category-level-odd"><a
+														href="javascript:;">一言鸡汤</a></li>
+											</ul>
+										</li>
+										<!--/循环输出分类-->
+										<li class="category-level-0 category-parent"><a href="zwfl/index.html"><span
+													class="nav-icon"><i class="fa fa-calendar-o"></i></span>暂无分类</a>
+										</li>
+									</ul>
+								</li>
+								<!--独立页面pages-->
+								<li>
+									<a class="auto">
+										<span class="pull-right text-muted">
+											<i class="fontello icon-fw fontello-angle-right text"></i>
+											<i class="fontello icon-fw fontello-angle-down text-active"></i>
+										</span>
+										<span class="nav-icon"><i data-feather="file"></i></span>
+										<span>页面</span>
+									</a>
+									<ul class="nav nav-sub dk">
+										<li class="nav-sub-header">
+											<a data-no-instant="">
+												<span>页面</span>
+											</a>
+										</li>
+										<!--这个字段不会被显示出来-->
+										<!--循环输出独立页面-->
+										<li><a href="ym/sgj.html"><span class="nav-icon"><i
+														class="fa fa-birthday-cake"></i></span><span>时光机</span></a></li>
+										<li><a href="ym/wht/wht.html"><span class="nav-icon"><i
+														class="fa fa-book"></i></span><span>万花筒</span></a></li>
+										<li><a href="ym/sys.html"><span class="nav-icon"><i
+														class="fa fa-print"></i></span><span>实验室</span></a></li>
+										<li><a href="ym/dhl.html"><span class="nav-icon"><i
+														class="fa fa-link"></i></span><span>导航链</span></a></li>
+									</ul>
+								</li>
+								<!--友情链接-->
+								<li>
+									<a class="auto">
+										<span class="pull-right text-muted">
+											<i class="fontello icon-fw fontello-angle-right text"></i>
+											<i class="fontello icon-fw fontello-angle-down text-active"></i>
+										</span>
+										<span class="nav-icon"><i data-feather="user"></i></span>
+										<span>友链</span>
+									</a>
+									<ul class="nav nav-sub dk">
+										<li class="nav-sub-header">
+											<a data-no-instant="">
+												<span>友链</span>
+											</a>
+										</li>
+										<!--使用links插件，输出全站友链-->
+										<li data-original-title="诗梦博客，记录个人生活点滴所思所想，分享各种技术教程，软件，源码等。"
+											data-toggle="tooltip" data-placement="top">
+											<a rel='noopener' href="http://smbk.work/"
+												target="_blank"><span>诗梦博客</span></a>
+										</li>
+										<li data-original-title="诗梦博客，记录个人生活点滴所思所想，分享各种技术教程，软件，源码等。"
+											data-toggle="tooltip" data-placement="top"><a rel='noopener'
+												href="http://smbk.work/" target="_blank"><span>诗梦博客</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<!-- nav -->
+					</div>
+				</div>
+				<!--.aside-wrap-->
+			</aside>
+			<!-- content -->
+			<div id="content" class="app-content">
+				<!--loading animate-->
+				<div id="loading" class="butterbar active hide">
+					<span class="bar"></span>
+				</div>
+				<a class="off-screen-toggle hide"></a>
+				<main class="app-content-body ">
+					<div class="hbox hbox-auto-xs hbox-auto-sm">
+						<div class="col center-part">
+							<!-- 公告 -->
+							<div class="alert alert-warning alert-block" style="
+							              margin-bottom: 0px;">
+								<button type="button" class="close" data-dismiss="alert">×</button>
+								<p><i class="fontello fontello-volume-up" aria-hidden="true"></i>&nbsp;
+									欢迎光临诗梦博客！本博客正式发布于2021年5月30日。更多精彩内容敬请期待！</p>
+							</div>
+							<!-- 公告end -->
+							<header class="bg-light lter wrapper-md">
+								<h1 class="m-n font-thin text-black l-h">Seeker</h1>
+								<small class="text-muted letterspacing indexWords">加载中……<script>
+										$.ajax({
+											type: 'Get',
+											url: 'https://v1.hitokoto.cn/',
+											success: function(data) {
+												//data = JSON.parse(data);
+												var hitokoto = data.hitokoto;
+												$('.indexWords').text(hitokoto);
+											}
+										});
+									</script></small>
+							</header>
+							<div class="wrapper-md skt-loading" id="post-panel">
+								<!-- 轮播 -->
+								<div id="index-carousel"
+									class="box-shadow-wrap-normal border-radius-6 carousel slide m-b-md"
+									data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#index-carousel" data-slide-to="0" class="active"></li>
+										<!-- 第一张 -->
+										<li data-target="#index-carousel" data-slide-to="1"></li>
+										<li data-target="#index-carousel" data-slide-to="2"></li>
+										<li data-target="#index-carousel" data-slide-to="3"></li>
+										<!-- <li data-target="#index-carousel" data-slide-to="4"></li> -->
+										<!-- 以此类推输出 -->
+									</ol>
+									<div class="carousel-inner border-radius-6" role="listbox">
+										<div class="item border-radius-6 active">
+											<a href="zwfl/index.html">
+												<img class="border-radius-6"
+													src="https://cdn.jsdelivr.net/gh/SeekerXm/Smwl@main/MyBlog/image/lb-1.jpg"
+													data-holder-rendered="true">
+												<div class="carousel-caption">
+													<h3>诗梦博客</h3>
+													<p>在复杂中，保持简洁。
+														一款用心的网站。</p>
+												</div>
+											</a>
+										</div>
+										<div class="item  border-radius-6">
+											<a href="ym/sys/vipfilm/index.html">
+												<img class="border-radius-6"
+													src="https://cdn.jsdelivr.net/gh/SeekerXm/images@main/img/7.jpg"
+													data-holder-rendered="true">
+												<div class="carousel-caption">
+													<h3>VIP视频解析系统</h3>
+													<p>免费解析各大付费VIP视频。</p>
+												</div>
+											</a>
+										</div>
+										<div class="item  border-radius-6">
+											<a href="ym/sys/wallpaper/index.php">
+												<img class="border-radius-6"
+													src="https://cdn.jsdelivr.net/gh/SeekerXm/images@main/img/14.jpg"
+													data-holder-rendered="true">
+												<div class="carousel-caption">
+													<h3>PC壁纸大全</h3>
+													<p>海量各类高清电脑桌面壁纸。</p>
+												</div>
+											</a>
+										</div>
+										<div class="item  border-radius-6">
+											<a href="ym/dhl.html">
+												<img class="border-radius-6"
+													src="https://cdn.jsdelivr.net/gh/SeekerXm/Smwl@main/MyBlog/image/lb-2.png"
+													data-holder-rendered="true">
+												<div class="carousel-caption">
+													<h3>实用网站合集</h3>
+													<p>博主收藏了一些实用网站</p>
+												</div>
+											</a>
+										</div>
+										<!-- <div class="item  border-radius-6">
+											<a href="ym/dhl.html">
+												<img class="border-radius-6" src="images/2.jpg" data-holder-rendered="true">
+												<div class="carousel-caption">
+													<h3>测试三标题</h3>
+													<p>测试三文字描述</p>
+												</div>
+											</a>
+										</div> -->
+										<!-- 以此类推输出 -->
+									</div>
+									<a class="left carousel-control" href="#index-carousel" role="button"
+										data-slide="prev">
+										<svg class="glyphicon-chevron-left" viewBox="0 0 24 24" width="24" height="24"
+											stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+											stroke-linejoin="round">
+											<polyline points="15 18 9 12 15 6"></polyline>
+										</svg>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="right carousel-control" href="#index-carousel" role="button"
+										data-slide="next">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round"
+											class="glyphicon-chevron-right" aria-hidden="true">
+											<polyline points="9 18 15 12 9 6"></polyline>
+										</svg>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+								<!-- 轮播end -->
+								<!--首页输出文章-->
+								<div class="blog-post">
+
+									<!-- 测试文章模板 -->
+
+									<!-- 测试文章 -->
+
+									<!--导航栏快捷搜索-->
+									<div class="row visible-lg visible-md">
+										<div class="col-lg-12">
+											<div class="panel csgdwb panel-default">
+												<div class="panel-heading">
+													<i class="fa fa-search" aria-hidden="true"></i> 快捷搜索
+												</div>
+												<div class="panel-body">
+													<div class="nav-tabs-alt">
+														<ul class="nav nav-tabs nav-justified">
+															<li class="active">
+																<a data-target="#tab-1" role="tab" data-toggle="tab"
+																	aria-expanded="true">
+																	<span class="post-icons"
+																		style="color: rgb(131, 78, 117);"><svg
+																			t="1609593905827" class="icon"
+																			viewBox="0 0 1024 1024" version="1.1"
+																			xmlns="http://www.w3.org/2000/svg"
+																			p-id="2295" width="200" height="200">
+																			<path
+																				d="M345.706 297.423c15.35 12.792 35.817 20.467 53.726 17.908 20.467 0 38.375-10.233 53.725-23.025 17.91-15.35 30.7-35.817 40.934-58.842C512 189.97 512 136.245 496.65 90.194c-10.234-30.7-28.142-58.842-53.726-76.75C427.574 3.21 404.548-1.906 384.081 0.652c-12.791 2.558-25.583 7.675-38.375 15.35-23.025 15.35-38.376 40.934-48.61 66.518-12.791 46.05-15.35 92.101-2.557 138.152 10.233 28.142 25.583 56.284 51.167 76.75z m255.837 2.558c17.909 15.35 40.934 25.584 63.96 25.584 20.466 2.558 38.375-2.558 56.283-12.792 17.909-10.233 33.26-25.584 43.493-43.492 12.792-20.467 23.025-40.934 30.7-63.96 5.117-17.908 7.675-38.375 5.117-58.842-2.559-28.142-15.35-53.726-33.259-76.751-12.792-15.35-28.142-30.7-46.05-38.376-12.792-5.116-28.143-10.233-40.935-7.675-17.908 2.559-33.258 12.792-46.05 23.026-17.909 15.35-33.259 33.258-43.493 53.725-10.233 17.909-20.466 38.376-23.025 61.401-2.558 25.584-2.558 51.168 2.559 74.193 5.116 23.025 12.791 46.05 30.7 63.96zM245.929 509.768c17.91-15.35 28.143-35.818 35.818-56.285 10.233-33.258 10.233-66.517 7.675-99.776 0-12.792-5.117-25.584-10.234-38.376-12.792-28.142-35.817-53.725-63.959-69.076-23.025-10.233-46.05-15.35-66.518-10.233-25.583 2.558-46.05 20.467-61.4 40.934-20.467 28.142-30.7 63.96-35.818 97.218-2.558 20.467 0 40.934 5.117 61.4 7.675 30.701 23.025 58.843 46.05 79.31 17.91 15.35 40.935 23.026 63.96 23.026 28.142 0 56.284-7.675 79.31-28.142z m736.811-76.752c-2.558-20.467-7.675-38.375-17.908-56.284-10.234-20.467-28.143-40.934-48.61-51.167-23.025-12.792-51.167-15.35-76.75-12.792-12.792 2.558-28.143 5.117-40.935 12.792-17.908 10.233-30.7 28.142-40.933 48.609-10.234 25.584-15.35 53.726-15.35 81.868 0 25.583 0 53.726 7.674 79.31 5.117 17.908 15.35 38.375 33.26 48.608 17.908 15.35 40.933 20.467 63.959 23.026 17.908 2.558 38.375 2.558 56.284-2.559 17.908-5.116 35.817-15.35 46.05-30.7 12.792-15.35 20.467-35.817 23.026-53.726 12.792-30.7 10.233-58.842 10.233-86.985zM911.106 819.33c-2.559-35.817-20.467-71.634-46.05-99.776-5.118-5.117-10.234-10.234-17.91-15.35-33.258-28.142-66.517-58.843-99.776-89.543-33.259-33.26-63.96-69.076-92.101-107.452-20.467-33.259-48.61-63.96-86.985-81.868-23.025-10.233-51.167-15.35-76.751-12.792-46.05 5.117-86.985 30.7-115.127 66.518-7.675 7.675-12.791 17.909-17.908 28.142-20.467 30.7-46.05 61.401-74.193 86.985-15.35 15.35-30.7 28.142-46.05 40.934-7.676 7.675-17.91 15.35-25.584 23.025-30.7 23.025-61.401 53.726-79.31 86.985-12.792 23.025-20.467 48.609-23.025 76.75 0 23.026 2.558 46.051 10.233 66.518 7.675 23.026 17.909 46.051 33.26 63.96 25.583 30.7 63.958 51.167 102.334 53.725 48.609 2.559 97.218 0 143.269-7.675 20.467-2.558 40.934-10.233 63.959-12.792 46.05-5.116 92.101-2.558 135.594 10.234 35.817 12.792 74.192 17.909 112.568 20.467 38.375 2.558 79.31-2.558 115.127-23.025 25.583-12.792 46.05-35.818 58.842-61.401 20.467-33.26 30.7-71.635 25.584-112.569zM481.3 924.224H363.615c-12.792 0-25.584 0-38.376-2.559-25.584-5.117-48.61-20.467-63.96-43.492-12.791-15.35-20.466-33.259-23.025-53.726a246.563 246.563 0 0 1 0-61.4c5.117-23.026 17.909-43.493 33.26-58.843 12.791-12.792 30.7-23.026 48.608-30.7 7.675-2.56 15.35-5.117 23.026-5.117h69.076v-97.219h66.517c2.559 120.244 2.559 237.929 2.559 353.056z m263.512 0H583.634c-17.908-2.559-33.258-7.676-46.05-17.909-15.35-12.792-23.026-33.259-23.026-51.167v-173.97h66.518v161.178c0 7.675 2.558 12.792 7.675 17.908 5.117 5.117 12.792 7.675 20.467 7.675h69.076V678.62h66.518v245.604z"
+																				fill="#306CFF" p-id="2296"></path>
+																			<path
+																				d="M340.59 734.904c-12.793 5.117-25.585 15.35-33.26 30.7-5.116 12.792-7.675 25.584-7.675 38.376 0 15.35 5.117 30.7 12.792 43.492 10.234 15.35 28.142 25.584 46.05 23.026h53.727V732.346H353.38c-2.558-2.559-7.675 0-12.792 2.558z"
+																				fill="#306CFF" p-id="2297"></path>
+																		</svg></span>
+																	百度</a>
+															</li>
+															<li class="">
+																<a data-target="#tab-2" role="tab" data-toggle="tab"
+																	aria-expanded="false">
+																	<span class="post-icons"
+																		style="color: rgb(59, 202, 110);"><svg
+																			t="1609594074676" class="icon"
+																			viewBox="0 0 1024 1024" version="1.1"
+																			xmlns="http://www.w3.org/2000/svg"
+																			p-id="3862" width="16" height="16">
+																			<path
+																				d="M716.842667 970.24L759.04 1024c66.602667-28.842667 124.842667-69.12 172.842667-121.642667l-40.362667-56.234666a439.978667 439.978667 0 0 1-174.08 124.117333h-0.597333z"
+																				fill="#d81e06" p-id="3863"></path>
+																			<path
+																				d="M512 947.157333c-246.4 0-446.08-197.077333-446.08-441.6C65.92 262.4 265.6 65.28 512 65.28s446.122667 198.4 446.122667 441.6c0 108.8-40.362667 208.682667-106.965334 285.44l40.32 53.802667C972.842667 756.437333 1024 637.397333 1024 506.88 1024 225.92 794.88 0 512 0S0 226.602667 0 505.6c0 280.32 229.12 506.88 512 506.88 72.96 0 142.08-14.762667 204.842667-42.24l-41.002667-53.76c-51.2 19.2-106.24 30.677333-163.84 30.677333z"
+																				fill="#d81e06" p-id="3864"></path>
+																			<path
+																				d="M768 539.562667c-96-79.36-227.84-89.642667-332.842667-151.722667-32-20.437333-6.314667-59.52 25.685334-60.8 115.157333-19.2 229.077333 26.88 336.597333 64l6.442667-113.28c-134.442667-48.64-280.32-80-422.442667-57.6-51.2 12.8-102.4 28.8-138.837333 66.56-49.962667 51.2-41.002667 143.36 16.597333 184.32 95.402667 74.88 220.842667 85.802667 325.162667 143.36 40.96 16.64 23.68 71.68-16.682667 75.52-124.8 23.68-247.68-30.762667-355.2-89.6-1.28 43.52-2.56 85.76-2.56 128 136.32 60.117333 288 88.277333 435.2 65.237333 49.92-9.6 101.12-25.6 137.6-62.037333 52.437333-51.2 47.402667-149.802667-14.08-192H768z"
+																				fill="#d81e06" p-id="3865"></path>
+																		</svg></span>
+																	搜狗</a>
+															</li>
+															<li class="">
+																<a data-target="#tab-3" role="tab" data-toggle="tab"
+																	aria-expanded="false">
+																	<span class="post-icons"
+																		style="color: rgb(255, 102, 0);"><svg
+																			t="1609594135963" class="icon"
+																			viewBox="0 0 1024 1024" version="1.1"
+																			xmlns="http://www.w3.org/2000/svg"
+																			p-id="5609" width="16" height="16">
+																			<path
+																				d="M336.875 549.987c8.918 0 17.985-0.01 27.051 0 171.636 0.216 343.272 0.451 514.908 0.631 31.886 0.03 32.571-1.061 33.192-33.037 3.303-169.878-74.563-291.536-220.813-372.867-15.63-8.693-29.934-11.241-44.543 1.922-44.383 39.996-89.076 79.649-133.429 119.681-3.443 3.113-5.186 8.115-10.746 17.164 87.7 11.291 136.026 63.957 163.733 144.225-10.119 0.853-17.417 1.997-24.714 2.007-90.518 0.12-181.03 0.163-271.545 0.018-26.018-0.042-31.575-6.173-18.841-28.205 16.021-27.719 35.069-54.227 56.177-78.311 20.695-23.61 46.34-42.796 68.539-65.188 77.42-78.081 162.552-145.243 271.883-191.74-27.997-13.213-50.289-23.73-77.354-36.5C739.219 0.293 805.693-12.051 873.249 14.988c47.786 19.126 71.169 60.186 78.546 112.952-46.87-81.896-114.961-89.188-200.124-60.479 136.021 82.956 219.463 197.296 245.197 350.206 17.558 104.28 2.833 205.063-46.88 298.373-113.89 213.75-312.272 278.907-498.719 260.53 42.13-18.914 68.408-60.043 119.718-68.837 155.261-26.605 262.954-115.211 320.26-262.975 9.515-24.533 5.375-31.35-21.195-31.681-64.027-0.795-128.109-1.331-192.091 0.682-11.661 0.365-24.674 11.541-33.998 20.814-17.422 17.342-30.915 38.803-49.063 55.209-37.776 34.143-82.739 42.61-131.279 27.786-66.665-20.348-128.813-101.372-126.746-167.581zM658.401 31.382c-36.085 21.706-69.748 43.329-104.861 62.275-11.151 6.016-26.171 6.912-39.378 6.759-259.726-3.018-454.685 226.707-408.047 481.548 1.897 10.354 5.951 20.314 10.966 37.006 23.783-44.724 42.25-84.427 65.255-121.302 22.559-36.16 49.733-69.435 79.131-100.615-31.951 57.938-67.56 114.218-94.819 174.28-26.931 59.343-45.424 122.514-66.915 182.057-82.209-93.661-124.775-325.032-7.517-513.369C226.764 23.912 485.579-32.798 658.401 31.382zM186.688 760.15c83.401 98.075 188.91 149.61 317.395 153.869-27.847 40.244-91.846 62.36-134.49 48.832-64.988-20.625-123.444-52.586-176.478-95.697-16.078-13.072-22.521-26.355-20.047-45.645 2.44-18.998 4.78-38.007 7.162-57.015 2.153-1.445 4.306-2.891 6.458-4.344zM376.261 996.399c-57.796 37.696-154.231 36.159-207.21-0.821-52.588-36.71-80.245-125.221-61.377-205.909 20.522 35.86 58.662 53.177 63.594 97.444 9.907 88.886 71.972 129.956 166.771 116.063 11.483-1.682 22.867-4.034 38.222-6.777z"
+																				p-id="5610" fill="#1afa29"></path>
+																		</svg></span>
+																	360</a>
+															</li>
+															<li class="">
+																<a data-target="#tab-4" role="tab" data-toggle="tab"
+																	aria-expanded="false">
+																	<span class="post-icons"
+																		style="color: rgb(236, 169, 167);"><svg
+																			t="1609594187749" class="icon"
+																			viewBox="0 0 1024 1024" version="1.1"
+																			xmlns="http://www.w3.org/2000/svg"
+																			p-id="7607" width="16" height="16">
+																			<path
+																				d="M512 1024c282.773333 0 512-229.226667 512-512S794.773333 0 512 0 0 229.226667 0 512s229.226667 512 512 512z"
+																				fill="#008373" p-id="7608"></path>
+																			<path
+																				d="M324.266667 204.8l122.730666 43.178667v432l172.864-99.776-84.757333-39.786667-53.461333-133.077333 272.384 95.701333v139.114667L447.061333 819.2 324.266667 750.890667z"
+																				fill="#FFFFFF" p-id="7609"></path>
+																		</svg></span>
+																	必应</a>
+															</li>
+															<li class="">
+																<a data-target="#tab-5" role="tab" data-toggle="tab"
+																	aria-expanded="false">
+																	<span class="post-icons"
+																		style="color: rgb(59, 202, 110);"><svg
+																			t="1609594227713" class="icon"
+																			viewBox="0 0 1024 1024" version="1.1"
+																			xmlns="http://www.w3.org/2000/svg"
+																			p-id="8302" width="16" height="16">
+																			<path
+																				d="M512 0C228.430769 0 0 228.430769 0 512s228.430769 512 512 512 512-228.430769 512-512S795.569231 0 512 0z m196.923077 701.046154c-47.261538 51.2-114.215385 78.769231-185.107692 74.830769h-7.876923c-145.723077 0-263.876923-122.092308-259.938462-267.815385 0-145.723077 122.092308-263.876923 267.815385-259.938461 66.953846 0 133.907692 23.630769 181.16923 74.830769l-51.2 51.2c-35.446154-35.446154-82.707692-51.2-129.96923-51.2-106.338462 0-192.984615 86.646154-192.984616 192.984616s86.646154 192.984615 192.984616 192.984615c51.2 3.938462 98.461538-15.753846 133.907692-51.2 23.630769-23.630769 35.446154-59.076923 39.384615-90.584615h-173.292307v-70.892308h244.184615c3.938462 15.753846 3.938462 31.507692 3.938462 43.323077 0 55.138462-23.630769 118.153846-63.015385 161.476923z"
+																				fill="#080405" p-id="8303"></path>
+																		</svg></span>
+																	谷歌</a>
+															</li>
+														</ul>
+													</div>
+													<div class="row-row">
+														<div class="cell scrollable hover">
+															<div class="cell-inner">
+																<div class="tab-content">
+																	<div class="tab-pane active" id="tab-1">
+																		<div class="wrapper-md">
+																			<div class="input-group m-b">
+
+																				<span
+																					class="input-group-addon">百度搜索</span>
+																				<input type="text" id="baidu"
+																					class="form-control"
+																					placeholder="请输入搜索内容">
+																			</div>
+																			<div class="text-center">
+																				<button class="btn m-b-xs w-xs btn-info"
+																					onclick="window.open('https://www.baidu.com/s?ie=UTF-8&wd='+$('#baidu').val())">点我搜索
+																				</button>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="tab-pane" id="tab-2">
+																		<div class="wrapper-md">
+																			<div class="input-group m-b">
+																				<span
+																					class="input-group-addon">搜狗搜索</span>
+																				<input type="text" id="sogou"
+																					class="form-control"
+																					placeholder="请输入搜索内容">
+																			</div>
+																			<div class="text-center">
+																				<button class="btn m-b-xs w-xs btn-info"
+																					onclick="window.open('https://www.sogou.com/web?_asf=www.gqink.cn&query='+$('#sogou').val())">点我搜索</button>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="tab-pane" id="tab-3">
+																		<div class="wrapper-md">
+																			<div class="input-group m-b">
+																				<span
+																					class="input-group-addon">360搜索</span>
+																				<input type="text" id="so"
+																					class="form-control"
+																					placeholder="请输入搜索内容">
+																			</div>
+																			<div class="text-center">
+																				<button class="btn m-b-xs w-xs btn-info"
+																					onclick="window.open('https://www.so.com/s?ie=utf-8&fr=www.gqink.cn&src=www.gqink.cn&q='+$('#so').val())">点我搜索</button>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="tab-pane" id="tab-4">
+																		<div class="wrapper-md">
+																			<div class="input-group m-b">
+																				<span
+																					class="input-group-addon">必应搜索</span>
+																				<input type="text" id="bing"
+																					class="form-control"
+																					placeholder="请输入搜索内容">
+																			</div>
+																			<div class="text-center">
+																				<button class="btn m-b-xs w-xs btn-info"
+																					onclick="window.open('https://cn.bing.com/search?qs=n&form=www.gqink.cn&scope=web&sp=-1&q='+$('#bing').val())">点我搜索</button>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="tab-pane" id="tab-5">
+																		<div class="wrapper-md">
+																			<div class="input-group m-b">
+																				<span
+																					class="input-group-addon">谷歌搜索</span>
+																				<input type="text" id="Google"
+																					class="form-control"
+																					placeholder="请输入搜索内容">
+																			</div>
+																			<div class="text-center">
+																				<button class="btn m-b-xs w-xs btn-info"
+																					onclick="window.open('https://www.google.com/search?q='+$('#Google').val())">点我搜索</button>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--导航栏快捷搜索end-->
+
+									<!-- 无图文章模板列表 -->
+									<!-- <div class="single-post panel pane2 box-shadow-wrap-normal">
+										<div class="post-meta wrapper-lg">
+											<h2 class="m-t-none text-ellipsis index-post-title text-title"><a
+													href="#">无图文章模板列表</a>
+											</h2>
+											<p class="summary l-h-2x text-muted">
+												文章内容摘要...
+											</p>
+											<div class="line line-lg b-b b-light"></div>
+											<div
+												class="text-muted post-item-foot-icon post-item-foot-icon-1 text-ellipsis list-inline">
+												<li>
+													<span class="m-r-sm right-small-icons"><i
+															data-feather="user"></i></span><a href="dly/gyw.html">诗梦</a>
+												</li>
+												<li><span class="right-small-icons m-r-sm"><i
+															data-feather="clock"></i></span>2021 年 06 月 19 日</li>
+											</div>
+										</div> 
+									</div>-->
+									<!-- 置顶类文章模板 -->
+									<!-- <div class="single-post panel-picture border-radius-6 box-shadow-wrap-normal">
+										<figure class="post-thumbnail border-radius-6">
+											<a class="post-thumbnail-inner index-image lazy" href="index34.html" style="background-image: url(image/index_bg.jpg)">
+											</a>
+										</figure>
+										<header class="entry-header wrapper-lg">
+											<h3 class="m-t-none text-ellipsis index-post-title"><a href="zwfl/index.html" rel="bookmark" tabindex="0" data-pjax-state=""><span
+													 class="label text-sm bg-danger pull-left m-t-xs m-r" style="margin-top:  2px;">置顶</span>诗梦博客
+													—— 一款用心的网站</a></h3>
+											<div class="entry-meta">
+												<span class="byline"><span class="author vcard"><a href="zwfl/index.html" tabindex="0">在复杂中，保持简洁。
+															一款精心打磨后的主题。</a></span></span>
+											</div>
+										</header>
+									</div> -->
+									<!-- 左小图标文章模板 -->
+									<div class="single-post panel">
+										<div class="post-meta wrapper-lg">
+											<div class="item-meta-ico bg-ico-chat"></div>
+											<h2 class="m-t-none text-ellipsis index-post-title text-title"><a
+													href="shsb/passage/1.html">不必仰望他人，自己亦是风景！</a></h2>
+											<p class="summary l-h-2x text-muted">
+												最近在网上偶然看到一篇现代诗歌，叫《断章》，是现代诗人卞之琳所做，看完之后深有感触...</p>
+											<div class="line line-lg b-b b-light"></div>
+											<div class="text-muted post-item-foot-icon text-ellipsis list-inline">
+												<li>
+													<span class="m-r-sm right-small-icons"><i
+															data-feather="user"></i></span><a href="dly/gyw.html">诗梦</a>
+												</li>
+												<li><span class="right-small-icons m-r-sm"><i
+															data-feather="clock"></i></span>2020 年 11 月 19 日</li>
+											</div>
+										</div>
+									</div>
+									<!-- 做图片文章模板 -->
+									<div class="panel-small single-post box-shadow-wrap-normal">
+										<div class="index-post-img-small post-feature index-img-small">
+											<a href="rjfx/android/passage/1.html">
+												<div class="item-thumb-small lazy"
+													style="background-image: url(rjfx/android/img/kuan.png)"></div>
+											</a>
+										</div>
+										<div class="post-meta wrapper-lg">
+											<h2 class="m-t-none text-ellipsis index-post-title text-title"><a
+													href="rjfx/android/passage/1.html">酷安</a></h2>
+											<p class="summary l-h-2x text-muted">
+												酷安是深圳酷安网络科技有限公司旗下的一个泛科技数码社区，口号是「发现科技新生活」，前身为知名第三方安卓应用市场「酷市场」...</p>
+											<div class="line line-lg b-b b-light"></div>
+											<div class="text-muted post-item-foot-icon text-ellipsis list-inline">
+												<li>
+													<span class="m-r-sm right-small-icons"><i
+															data-feather="user"></i></span><a href="dly/gyw.html">诗梦</a>
+												</li>
+												<li><span class="right-small-icons m-r-sm"><i
+															data-feather="clock"></i></span>2020 年 08 月 29 日</li>
+											</div>
+										</div>
+									</div>
+									<!-- 上方图片文章模板 -->
+									<div class="single-post panel">
+										<div class="index-post-img">
+											<a href="jsjc/qt/passage/1.html">
+												<div class="item-thumb lazy"
+													style="background-image: url(jsjc/qt/img/css.jpg)">
+												</div>
+											</a>
+										</div>
+										<div class="post-meta wrapper-lg">
+											<h2 class="m-t-none text-ellipsis index-post-title text-title"><a
+													href="jsjc/qt/passage/1.html">CSS定义HR水平线样式CSS定义HR水平线样式CSS定义HR水平线样式CSS定义HR水平线样式</a>
+											</h2>
+											<!-- <p class="summary l-h-2x text-muted">CSS定义HR水平线的几种样式，不要小看了HR水平线哦，用好了会给你的网页增色不少，这一段代码分别定义了几种漂亮的HR样式及颜色，包括水平线变虚线。...</p> -->
+											<div class="line line-lg b-b b-light"></div>
+											<div class="text-muted post-item-foot-icon text-ellipsis list-inline">
+												<li>
+													<span class="m-r-sm right-small-icons"><i
+															data-feather="user"></i></span><a href="dly/gyw.html">诗梦</a>
+												</li>
+												<li><span class="right-small-icons m-r-sm"><i
+															data-feather="clock"></i></span>2017 年 01 月 17 日</li>
+											</div>
+										</div>
+									</div>
+									<!-- 文字浮与图片上方文章模板 -->
+									<div class="panel single-post panel-picture border-radius-6 box-shadow-wrap-normal">
+										<figure class="panel post-thumbnail border-radius-6">
+											<a class="post-thumbnail-inner index-image lazy"
+												href="jsjc/qt/passage/2.html"
+												style="background-image: url(jsjc/qt/img/css.jpg)">
+											</a>
+										</figure>
+										<header class="entry-header wrapper-lg">
+											<h3 class="m-t-none text-ellipsis index-post-title"><a
+													href="jsjc/qt/passage/2.html" rel="bookmark"
+													tabindex="0">仿站复制的别人的css违法吗？</a></h3>
+											<div class="entry-meta">
+												<span class="byline">通常来说仿站复制别人的css是不违法的，若...</span>
+												<hr style="height:1px;border:none;border-top:1px solid #cfcfcf;">
+												<div class="text-muted post-item-foot-icon text-ellipsis list-inline">
+													<li>
+														<span class="m-r-sm right-small-icons"><i
+																data-feather="user"></i></span><a
+															href="dly/gyw.html">诗梦</a>
+													</li>
+													<li><span class="right-small-icons m-r-sm"><i
+																data-feather="clock"></i></span>2020 年 12 月 12 日</li>
+												</div>
+											</div>
+										</header>
+									</div>
+									<!-- 模板end -->
+								</div>
+								<!--分页首页按钮-->
+								<!-- <nav class="text-center m-t-lg m-b-lg" role="navigation">
+									<ol class="page-navigator">
+										<li class="current"><a href="index42.html">1</a></li>
+										<li><a href="index43.html">2</a></li>
+										<li><a href="index44.html">3</a></li>
+										<li><a href="index45.html">4</a></li>
+										<li><span>...</span></li>
+										<li><a href="index46.html">40</a></li>
+										<li class="next"><a href="index43.html"><i class="fontello fontello-chevron-right"></i></a></li>
+									</ol>
+								</nav> -->
+							</div>
+						</div>
+						<!--首页右侧栏-->
+						<aside class="asideBar col w-md bg-white-only bg-auto no-border-xs" role="complementary">
+							<div id="sidebar">
+								<section id="tabs-4" class="widget widget_tabs clear">
+									<div class="nav-tabs-alt no-js-hide">
+										<ul id="ycwz"
+											class="nav nav-tabs nav-justified box-shadow-bottom-normal tablist"
+											role="tablist">
+											<span class="navs-slider-bar"></span>
+										</ul>
+									</div>
+									<div class="tab-content">
+										<!--热门文章-->
+										<div id="widget-tabs-4-hots" class="tab-pane  fade in wrapper-md active"
+											role="tabpanel">
+											<h5 class="widget-title m-t-none text-md">推荐文章</h5>
+											<ul class="list-group no-bg no-borders pull-in m-b-none">
+												<li class="list-group-item">
+													<a href="index34.html" class="pull-left thumb-sm m-r"><img
+															src="image/tjwz-ico_1.jpg"
+															class="img-40px normal-shadow img-square"></a>
+													<div class="clear">
+														<h4 class="h5 l-h text-second"> <a href="shsb/passage/1.html"
+																title="不必仰望他人，自己亦是风景！">
+																不必仰望他人，自己亦是风景！ </a></h4>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<!--博客信息-->
+								<section id="blog_info" class="widget widget_categories wrapper-md clear">
+									<h5 class="widget-title m-t-none text-md">博客信息</h5>
+									<ul class="list-group box-shadow-wrap-normal">
+										<li class="list-group-item text-second"><span class="blog-info-icons"> <i
+													data-feather="award"></i></span>
+											<span class="badge
+								pull-right" style="background-color: rgb(93, 189, 231);">诗·梦</span>博主昵称
+										</li>
+										<li class="list-group-item text-second"> <span class="blog-info-icons"> <i
+													data-feather="message-circle"></i></span>
+											<span class="badge
+								pull-right" style="background-color: rgb(171, 182, 245);">9</span>文章数目
+										</li>
+										<li class="list-group-item text-second"><span class="blog-info-icons"> <i
+													data-feather="calendar"></i></span>
+											<span class="badge
+								pull-right" style="background-color: rgb(163, 219, 243);"><span id="momk"></span></span>运行天数
+										</li>
+										<li class="list-group-item text-second"><span class="blog-info-icons"> <i
+													data-feather="activity"></i></span>
+											<span class="badge
+								pull-right" style="background-color: rgb(171, 182, 245);">2021.06.05</span>最后活动
+										</li>
+										<li class="list-group-item text-second"><span class="blog-info-icons"><i
+													class="fa fa-battery-1"></i></span>
+											<span class="badge
+								pull-right" style="background-color: rgb(93, 189, 231);">5.78MB</span>内存占用
+										</li>
+									</ul>
+								</section>
+								<!-- 彩色卡片切换 -->
+								<div class="csgdwb">
+									<div class="textwidget widget-text">
+
+										<div id="container-box-1">
+											<div class="container-box-1-1"><span class="yanse">坚持每天来逛逛，会让你</span></div>
+											<div id="flip-box-1">
+												<div>
+													<div class="flip-box-1-1"><span class="yanse">工作也轻松了！</span></div>
+												</div>
+												<div>
+													<div class="flip-box-1-2"><span class="yanse">生活也美好了！</span></div>
+												</div>
+												<div>
+													<div class="flip-box-1-3"><span class="yanse">心情也舒畅了！</span></div>
+												</div>
+												<div>
+													<div class="flip-box-1-4"><span class="yanse">走路也有劲了！</span></div>
+												</div>
+												<div>
+													<div class="flip-box-1-5"><span class="yanse">腿也不痛了！</span></div>
+												</div>
+												<div>
+													<div class="flip-box-1-6"><span class="yanse">腰也不酸了！</span></div>
+												</div>
+												<div>
+													<div class="flip-box-1-1"><span class="yanse">工作也轻松了！</span></div>
+												</div>
+											</div>
+											<div class="container-box-1-2"><span class="yanse">你好我也好，不要忘记哦！</span></div>
+										</div>
+									</div>
+								</div>
+								<!-- 彩色卡片切换end -->
+
+								<!--非文章页面-->
+								<section id="tag_cloud-2" class="widget widget_tag_cloud wrapper-md clear">
+									<h5 class="widget-title m-t-none text-md">标签云</h5>
+									<div class="tags l-h-2x">
+										<a href="javascript:;" class="label badge bg-dark-1" title="音乐"
+											data-toggle="tooltip">音乐</a>
+										<a href="javascript:;" class="label badge bg-dark-2" title="壁纸"
+											data-toggle="tooltip">壁纸</a>
+										<a href="javascript:;" class="label badge bg-dark-3" title="运动"
+											data-toggle="tooltip">运动</a>
+										<a href="javascript:;" class="label badge bg-dark-4" title="生活"
+											data-toggle="tooltip">生活</a>
+										<a href="javascript:;" class="label badge bg-dark-5" title="电影"
+											data-toggle="tooltip">电影</a>
+										<a href="javascript:;" class="label badge bg-dark-6" title="HTML"
+											data-toggle="tooltip">HTML</a>
+										<a href="javascript:;" class="label badge bg-dark-7" title="CSS"
+											data-toggle="tooltip">CSS</a>
+										<a href="javascript:;" class="label badge bg-dark-8" title="JavaScript"
+											data-toggle="tooltip">JavaScript</a>
+										<a href="javascript:;" class="label badge bg-dark-1" title="仿站"
+											data-toggle="tooltip">仿站</a>
+										<a href="javascript:;" class="label badge bg-dark-2" title="玩机党"
+											data-toggle="tooltip">玩机党</a>
+										<a href="javascript:;" class="label badge bg-dark-3" title="折腾"
+											data-toggle="tooltip">折腾</a>
+										<a href="javascript:;" class="label badge bg-dark-4" title="软件"
+											data-toggle="tooltip">软件</a>
+										<a href="javascript:;" class="label badge bg-dark-5" title="分享"
+											data-toggle="tooltip">分享</a>
+										<a href="javascript:;" class="label badge bg-dark-6" title="源码"
+											data-toggle="tooltip">源码</a>
+										<a href="javascript:;" class="label badge bg-dark-7" title="动漫"
+											data-toggle="tooltip">动漫</a>
+										<a href="javascript:;" class="label badge bg-dark-8" title="PHP"
+											data-toggle="tooltip">PHP</a>
+										<a href="javascript:;" class="label badge bg-dark-1" title="奋斗"
+											data-toggle="tooltip">奋斗</a>
+										<a href="javascript:;" class="label badge bg-dark-2" title="Web"
+											data-toggle="tooltip">Web</a>
+										<a href="javascript:;" class="label badge bg-dark-3" title="低调"
+											data-toggle="tooltip">低调</a>
+										<a href="javascript:;" class="label badge bg-dark-4" title="00后"
+											data-toggle="tooltip">00后</a>
+										<a href="javascript:;" class="label badge bg-dark-5" title="现实主义者"
+											data-toggle="tooltip">现实主义者</a>
+										<a href="javascript:;" class="label badge bg-dark-6" title="不善言辞"
+											data-toggle="tooltip">不善言辞</a>
+										<a href="javascript:;" class="label badge bg-dark-7" title="IT"
+											data-toggle="tooltip">IT</a>
+										<a href="javascript:;" class="label badge bg-dark-8" title="礼尚往来"
+											data-toggle="tooltip">礼尚往来</a>
+										<a href="javascript:;" class="label badge bg-dark-9" title="礼尚往来"
+											data-toggle="tooltip">前端</a>
+										<a href="javascript:;" class="label badge bg-dark-10" title="礼尚往来"
+											data-toggle="tooltip">杂七杂八</a>
+										<a href="javascript:;" class="label badge bg-dark-1" title="小工具"
+											data-toggle="tooltip">小工具</a>
+										<a href="javascript:;" class="label badge bg-dark-2" title="网站"
+											data-toggle="tooltip">网站</a>
+									</div>
+								</section>
+							</div>
+						</aside>
+				</main>
+			</div>
+			<footer id="footer" class="app-footer" role="footer">
+				<div class="wrapper bg-light">
+					<span class="pull-right hidden-xs text-ellipsis">
+						<span class="footer-custom footer-left-ver-right">本站部分素材采集于网络，如有侵权，请联系<a target="_blank"
+								href="https://qm.qq.com/cgi-bin/qm/qr?k=twRv5dCfH0NN6njRPrmn4bWu76s3Bssd&noverify=0">站长</a>及时删除</span>
+					</span>
+					<span class="footer-text-ellipsis">
+						<span class="footer-custom footer-left-ver-left">Copyright ©2020 - Now&nbsp;</span><span
+							class="footer-custom footer-left-user">By<a href="http://smbk.work/">诗梦博客</a> 版权所有
+							<!-- 51La统计 -->
+							<script type="text/javascript" src="//js.users.51.la/21140603.js"></script><!-- 51La统计 -->
+						</span>
+					</span>
+				</div>
+				<div class="topButton panel-default">
+					<button id="goToTop"
+						class="fix-padding btn btn-default no-shadow pos-abt hide  border-radius-half-left"
+						data-toggle="tooltip" data-placement="left" data-original-title="返回顶部">
+						<i class="fontello fontello-chevron-circle-up" aria-hidden="true"></i>
+					</button>
+				</div>
+			</footer>
+		</div>
+		<!--end of .app app-header-fixed-->
+		<script src="js/function.min-7.3.12020081502.js"></script>
+		<script src="js/core.min-7.3.12020081502.js"></script>
+		<!--主题组件js加载-->
+		<script src="js/jquery.pjax.min.js" type="text/javascript"></script>
+		<!--平滑滚动组件-->
+		<script src="js/SmoothScroll.min.js"></script>
+		<!--运行时间-->
+		<script src="js/RunTime.js"></script>
+		<!--点击特效-->
+		<script src="js/click-style.js"></script>
+		<!-- 下雪特效 -->
+		<script src="js/snow.js"></script>
+		<!-- 动态昵称 -->
+		<script src="js/dtnc.js"></script>
+	</body>
+</html>
